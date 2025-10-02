@@ -1,4 +1,20 @@
 /* ======================================= */
+/*            Estilo para Logo             */
+/* ======================================= */
+.vip-image {
+  height: 50px;
+  width: auto;
+  border: 3px solid rgba(212, 175, 55, 0.4); /* Dorado translúcido */
+  border-radius: 16px; /* Bordes más redondeados */
+ /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+/* transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vip-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+/* ======================================= */
 /* 1. Reset Básico y Tipografía Global     */
 /* ======================================= */
 
@@ -118,19 +134,4 @@ footer {
     /* Pequeño espacio superior para separar del contenido */
     border-top: 5px solid #007bff; 
 }
-/* ======================================= */
-/*            Estilo para Logo             */
-/* ======================================= */
-.vip-image {
-  height: 50px;
-  width: auto;
-  border: 2px solid rgba(212, 175, 55, 0.4); /* Dorado translúcido */
-  border-radius: 16px; /* Bordes más redondeados */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.vip-image:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
