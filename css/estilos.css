@@ -1,0 +1,120 @@
+/* ======================================= */
+/* 1. Reset Básico y Tipografía Global     */
+/* ======================================= */
+
+body {
+    /* Define una tipografía limpia y amigable */
+    font-family: 'Arial', sans-serif;
+    /* Un color de fondo muy suave para el cuerpo */
+    background-color: #f8f9fa; 
+}
+
+a {
+    /* Asegura que los enlaces no tengan un color corporativo por defecto */
+    text-decoration: none;
+}
+
+/* ======================================= */
+/* 2. Estilos de Encabezado y Navegación   */
+/* ======================================= */
+
+.titulo a {
+    /* Color de enlace del título del sitio, más oscuro */
+    color: #343a40 !important; 
+    transition: color 0.3s ease;
+}
+
+.titulo a:hover {
+    color: #007bff !important; /* Resalta el título al pasar el mouse */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    /* Efecto hover sutil en los enlaces de la barra de navegación oscura */
+    color: #ffc107; /* Amarillo suave para resaltar */
+}
+
+/* ======================================= */
+/* 3. Estilos de la Galería de Productos   */
+/* ======================================= */
+
+/* Título principal de la sección de productos */
+.container h2 {
+    color: #495057; /* Un gris oscuro, elegante */
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #007bff; /* Línea de acento azul */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+/* Estilos de las Tarjetas de Producto (Cards) */
+.card {
+    border: none;
+    border-radius: 12px;
+    /* Sombra más marcada para dar profundidad */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Mantiene la imagen dentro del radio del borde */
+}
+
+.card:hover {
+    /* Efecto visual al pasar el mouse: ligeramente levantado */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Ajuste de la imagen dentro de la tarjeta para un aspecto uniforme */
+.card-img-top {
+    width: 100%;
+    /* Altura fija para todas las imágenes. 'object-fit: cover' asegura que no se distorsionen. */
+    height: 300px; 
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #343a40;
+}
+
+/* Estilo para el precio, haciéndolo más grande y llamativo */
+.card-body h4 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-top: 0.5rem;
+}
+
+/* Botones de CTA */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-warning {
+    /* Color de oferta para destacar la acción */
+    background-color: #ffc107; 
+    border-color: #ffc107;
+    color: #343a40;
+    font-weight: bold;
+}
+
+/* ======================================= */
+/* 4. Estilos de Pie de Página             */
+/* ======================================= */
+
+footer {
+    /* Pequeño espacio superior para separar del contenido */
+    border-top: 5px solid #007bff; 
+}
