@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "g": "^2.0.1",
+    "sass": "^1.93.2"
+  },
+  "name": "mis-ideas-textiles-v3",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hola, soy Pablo Quiros</h1>\r <h3 align=\"center\">Un desarrollador frontend apasionado de Argentina</h3>",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pabloquiros/mis-ideas-textiles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pabloquiros/mis-ideas-textiles/issues"
+  },
+  "homepage": "https://github.com/pabloquiros/mis-ideas-textiles#readme"
+}

@@ -1,123 +1,120 @@
-/* ======================================= */
-/* Estilo para Logo             */
-/* ======================================= */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+.background-vip {
+  padding: 20px;
+  background: rgba(230, 207, 8, 0.1764705882);
+}
+
 .vip-image {
   height: 50px;
   width: auto;
-  border: 3px solid rgba(212, 175, 55, 0.4); 
-  border-radius: 16px; 
+  border: 3px solid rgba(212, 175, 55, 0.4);
+  border-radius: 16px;
+  /* Es fundamental para las rotaciones 3D como esta */
+  /* para que se vea el efecto de profundidad */
+  transform-style: preserve-3d;
+  /* Aplicación de la animación */
+  animation-name: girar-y;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate; /* Gira y luego regresa */
 }
 
-/* ======================================= */
-/* 1. Reset Básico y Tipografía Global     */
-/* ======================================= */
-
+/* Definición de la animación de giro en el eje Y */
+@keyframes girar-y {
+  0% {
+    /* Estado inicial: 0 grados de rotación en el eje Y */
+    transform: rotateY(0deg);
+  }
+  100% {
+    /* Estado final: Rotación de 360 grados en el eje Y */
+    transform: rotateY(360deg);
+  }
+}
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa; 
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to bottom right, #fdf6e3, rgba(243, 7, 184, 0.231372549));
+  background-attachment: fixed;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-/* ======================================= */
-/* 2. Estilos de Encabezado y Navegación   */
-/* ======================================= */
 
 .titulo a {
-    /* Usando la clase text-dark de Bootstrap en el HTML para evitar !important */
-    color: #343a40; 
-    transition: color 0.3s ease;
+  color: #343a40;
+  transition: color 0.3s ease;
 }
-
 .titulo a:hover {
-    /* Usando la clase text-primary de Bootstrap o un color específico */
-    color: #007bff; 
+  color: #007bff;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #ffc107; /* Amarillo suave para resaltar */
+  color: #ffc107;
 }
 
-/* ======================================= */
-/* 3. Estilos de la Galería de Productos   */
-/* ======================================= */
-
-/* Título principal de la sección de productos */
 .container h2 {
-    color: #495057; 
-    font-weight: 700;
-    margin-bottom: 2rem;
-    border-bottom: 3px solid #007bff; 
-    display: inline-block;
-    padding-bottom: 0.5rem;
+  color: #6c757d;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #007bff;
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
 
-/* Estilos de las Tarjetas de Producto (Cards) */
 .card {
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden; 
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
-
 .card:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-
-/* Ajuste de la imagen dentro de la tarjeta para un aspecto uniforme */
 .card-img-top {
-    width: 100%;
-    height: 300px; 
-    object-fit: cover;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
-
 .card-body {
-    padding: 1.25rem;
+  padding: 1.25rem;
 }
-
-.card-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #343a40;
+.card-body .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #343a40;
 }
-
-/* Estilo para el precio, haciéndolo más grande y llamativo */
-/* Se utiliza la clase card-body h4/h5 en HTML para que se adapte mejor a la jerarquía */
 .card-body h4, .card-body h5 {
-    font-size: 1.75rem;
-    font-weight: 800;
-    margin-top: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-top: 0.5rem;
 }
 
-/* Botones de Carrito */
+/* Botones de CTA (usando nesting para los estilos de Bootstrap) */
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    transition: background-color 0.3s ease;
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s ease;
 }
-
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+  background-color: rgb(0, 98.4, 204);
+  border-color: rgb(0, 98.4, 204);
 }
 
 .btn-warning {
-    background-color: #ffc107; 
-    border-color: #ffc107;
-    color: #343a40;
-    font-weight: bold;
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #343a40;
+  font-weight: bold;
 }
-
-/* ======================================= */
-/* 4. Estilos de Pie de Página             */
-/* ======================================= */
 
 footer {
-    border-top: 5px solid #007bff; 
+  border-top: 5px solid #007bff;
 }
+
+/*# sourceMappingURL=estilos.css.map */
