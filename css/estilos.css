@@ -21,6 +21,11 @@
   animation-direction: alternate; /* Gira y luego regresa */
 }
 
+.titulo-idea {
+  font-family: "Allura", sans-serif;
+  font-size: 60px;
+}
+
 /* Definición de la animación de giro en el eje Y */
 @keyframes girar-y {
   0% {

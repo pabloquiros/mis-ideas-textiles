@@ -46,6 +46,10 @@ background:#e6cf082d;
   animation-timing-function: ease-in-out;
   animation-direction: alternate; /* Gira y luego regresa */
 }
+.titulo-idea{
+    font-family:$font-title-page;
+    font-size: 60px;
+}
 /* Definición de la animación de giro en el eje Y */
 @keyframes girar-y {
   0% {
