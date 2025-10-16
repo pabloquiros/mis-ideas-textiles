@@ -1,32 +1,23 @@
 /* ======================================= */
-/*            Estilo para Logo             */
+/* Estilo para Logo             */
 /* ======================================= */
 .vip-image {
   height: 50px;
   width: auto;
-  border: 3px solid rgba(212, 175, 55, 0.4); /* Dorado translúcido */
-  border-radius: 16px; /* Bordes más redondeados */
- /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-/* transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid rgba(212, 175, 55, 0.4); 
+  border-radius: 16px; 
 }
 
-.vip-image:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
 /* ======================================= */
 /* 1. Reset Básico y Tipografía Global     */
 /* ======================================= */
 
 body {
-    /* Define una tipografía limpia y amigable */
     font-family: 'Arial', sans-serif;
-    /* Un color de fondo muy suave para el cuerpo */
     background-color: #f8f9fa; 
 }
 
 a {
-    /* Asegura que los enlaces no tengan un color corporativo por defecto */
     text-decoration: none;
 }
 
@@ -35,17 +26,17 @@ a {
 /* ======================================= */
 
 .titulo a {
-    /* Color de enlace del título del sitio, más oscuro */
-    color: #343a40 !important; 
+    /* Usando la clase text-dark de Bootstrap en el HTML para evitar !important */
+    color: #343a40; 
     transition: color 0.3s ease;
 }
 
 .titulo a:hover {
-    color: #007bff !important; /* Resalta el título al pasar el mouse */
+    /* Usando la clase text-primary de Bootstrap o un color específico */
+    color: #007bff; 
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    /* Efecto hover sutil en los enlaces de la barra de navegación oscura */
     color: #ffc107; /* Amarillo suave para resaltar */
 }
 
@@ -55,10 +46,10 @@ a {
 
 /* Título principal de la sección de productos */
 .container h2 {
-    color: #495057; /* Un gris oscuro, elegante */
+    color: #495057; 
     font-weight: 700;
     margin-bottom: 2rem;
-    border-bottom: 3px solid #007bff; /* Línea de acento azul */
+    border-bottom: 3px solid #007bff; 
     display: inline-block;
     padding-bottom: 0.5rem;
 }
@@ -67,14 +58,12 @@ a {
 .card {
     border: none;
     border-radius: 12px;
-    /* Sombra más marcada para dar profundidad */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden; /* Mantiene la imagen dentro del radio del borde */
+    overflow: hidden; 
 }
 
 .card:hover {
-    /* Efecto visual al pasar el mouse: ligeramente levantado */
     transform: translateY(-5px); 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
@@ -82,7 +71,6 @@ a {
 /* Ajuste de la imagen dentro de la tarjeta para un aspecto uniforme */
 .card-img-top {
     width: 100%;
-    /* Altura fija para todas las imágenes. 'object-fit: cover' asegura que no se distorsionen. */
     height: 300px; 
     object-fit: cover;
     border-top-left-radius: 12px;
@@ -100,7 +88,8 @@ a {
 }
 
 /* Estilo para el precio, haciéndolo más grande y llamativo */
-.card-body h4 {
+/* Se utiliza la clase card-body h4/h5 en HTML para que se adapte mejor a la jerarquía */
+.card-body h4, .card-body h5 {
     font-size: 1.75rem;
     font-weight: 800;
     margin-top: 0.5rem;
@@ -119,7 +108,6 @@ a {
 }
 
 .btn-warning {
-    /* Color de oferta para destacar la acción */
     background-color: #ffc107; 
     border-color: #ffc107;
     color: #343a40;
@@ -131,7 +119,5 @@ a {
 /* ======================================= */
 
 footer {
-    /* Pequeño espacio superior para separar del contenido */
     border-top: 5px solid #007bff; 
 }
-
